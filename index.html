@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="icon" href="./images/quiz.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Quiz</h1>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__list__link" href="./game">
+                            <i class="fas fa-play"></i>
+                            <span class="text">Начать</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-modal="rating" class="menu__list__link" href="#">
+                            <i class="fas fa-star"></i>
+                            <span class="text">Рейтинг</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-modal="settings" class="menu__list__link" href="#">
+                            <i class="fas fa-sliders-h"></i>
+                            <span class="text">Настройки</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div data-modal="settings" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content__item">
+                <h1 class="title">Настройки</h1>
+                <div class="colors">
+                    <h4>Выберите цвет фона</h4>
+                    <div class="color" data-color="#fab1a0"></div>
+                    <div class="color" data-color="#74b9ff"></div>
+                    <div class="color" data-color="#e84393"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div data-modal="rating" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content__item">
+                <h1 class="title">Рейтинг</h1>
+                <div class="ratings">
+                    <div class="user">
+                        <div class="user__name">Maks</div>
+                        <div class="user__score">Очки: 400</div>
+                        <button class="delete-score"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                    <div class="user">
+                        <div class="user__name">Maks</div>
+                        <div class="user__score">Очки: 400</div>
+                        <button class="delete-score"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/13da53ce3b.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

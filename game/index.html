@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Вопросы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="quiz">
+                <div class="quiz__header">
+                    <div class="quiz__header__left">
+                        <p id="question_num" class="progress-text">
+                            Вопрос
+                        </p>
+                        <div class="progress-bar">
+                            <div class="progress-bar__full"></div>
+                        </div>
+                    </div>
+                    <div class="quiz__header__left">
+                        <p class="progress-text">
+                            Баллы
+                        </p>
+                        <h1 id="scores" class="quiz-score">0</h1>
+                    </div>
+                </div>
+                <p class="question">Выберите правильный ответ?</p>
+                <div class="quiz__content">
+                    <div class="quiz__choice">
+                        <p class="quiz__choice__prefix">A</p>
+                        <p class="quiz__choice__text">2</p>
+                    </div>
+                    <div class="quiz__choice">
+                        <p class="quiz__choice__prefix">B</p>
+                        <p class="quiz__choice__text">4</p>
+                    </div>
+                    <div class="quiz__choice">
+                        <p class="quiz__choice__prefix">C</p>
+                        <p class="quiz__choice__text">6</p>
+                    </div>
+                    <div class="quiz__choice">
+                        <p class="quiz__choice__prefix">D</p>
+                        <p class="quiz__choice__text">1</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/13da53ce3b.js" crossorigin="anonymous"></script>
+    <script src="game.js"></script>
+
+</body>
+
+</html>
